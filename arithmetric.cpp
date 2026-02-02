@@ -1,33 +1,41 @@
 #include <iostream>
+#include <iomanip>
 #include <conio.h>
 
 using namespace std;
 
-int main ()
+int main()
 {
-    int num1 , num2;
-     num1 = 10;
-     num2 = 22;
+    float num1, num2;
 
-     int sum = num1 + num2;
-     cout << "The sum is :" << sum;
-     cout << endl;
+    cout << "Enter two numbers";
+    cin >> num1 >> num2;
 
-     int sub = num1 - num2;
-     cout << "The subsection is a :" << sub;
-     cout << endl;
+    cout << showpoint;
+    cout << fixed;
 
-     int multi = num1 * num2;
-     cout << "Multiplication is a : " << multi;
-     cout << endl;
+    float sum = num1 + num2;
 
-     int division = num1 / num2;
-     cout << "Division is a :" << division;
-     cout << endl;
+    cout << setw(15) << "The sum is :" << sum;
+    cout << endl;
 
-     int modulus = num1 % num2 ;
-     cout << "Modulus is a:" << modulus;
-     cout << endl;
-     
-     getch();
+    float sub = num1 - num2;
+    cout << setw(15) << "The subsection is a :" << sub;
+    cout << endl;
+
+    cout << noshowpoint;
+
+    float multi = num1 * num2;
+    cout << setw(15) << "Multiplication is a : " << multi;
+    cout << endl;
+
+    double division = (float)num1 / num2;
+    cout << setw(15) << "Division is a :" << division;
+    cout << endl;
+
+    //  int modulus = num1 % num2 ;
+    //  cout << "Modulus is a:" << modulus;
+    //  cout << endl;
+
+    getch();
 }
