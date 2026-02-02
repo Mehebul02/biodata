@@ -4,11 +4,8 @@ using namespace std;
 
 int main()
 {
-    int num1, num2;
-    num1 =10;
-    num2 = 33;
-
-    int total =num1+ num2;
+    double num1 =22 , num2=344.55;
+    double total =num1+ num2;
 
     cout << total << endl;  
     
