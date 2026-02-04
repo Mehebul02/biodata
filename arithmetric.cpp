@@ -19,6 +19,8 @@ int main()
     cout << setw(15) << "The sum is :" << sum;
     cout << endl;
 
+    cout << noshowpoint;
+
     float sub = num1 - num2;
     cout << setw(15) << "The subsection is a :" << sub;
     cout << endl;
